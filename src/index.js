@@ -15,3 +15,22 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+// Variables y Constantes; no usar var, debemos usar const para variables cuyo valor no cambie nunca y let para definir variables que tengan un alcance o scope diferente, como por ejemplo en bloques de código
+
+const nombre = 'Juan';
+const apellido = 'Lopez';
+
+let valorDado = 5;
+valorDado = 4;
+
+console.log( nombre, apellido, valorDado );
+
+if( true ) {
+
+  const nombre = 'Peter';
+
+  console.log( nombre ); 
+
+}
