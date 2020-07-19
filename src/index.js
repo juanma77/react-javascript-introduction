@@ -34,3 +34,18 @@ if( true ) {
   console.log( nombre ); 
 
 }
+
+// Template strings; usamos los backtips para esta funcionalidad, es como concaterar usando el más "+"
+
+const miNombre = `${ nombre } ${ apellido }`;
+
+console.log( miNombre );
+
+function getSaludo( nombre ) {
+
+  return 'Hola ' + nombre; 
+
+
+}
+
+console.log(`Este es un texto: ${ getSaludo( nombre ) }`);
