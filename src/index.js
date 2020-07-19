@@ -49,3 +49,38 @@ function getSaludo( nombre ) {
 }
 
 console.log(`Este es un texto: ${ getSaludo( nombre ) }`);
+
+// Objetos literales; son objetos de clave y valor
+
+const persona = {
+
+  nombre: 'Tony',
+  apellido: 'Stark',
+  edad: 45,
+  direccion: {
+
+    ciudad: 'New York',
+    longitud: 14.2184,
+    latitud: 24.54892
+
+  }
+
+
+};
+
+console.log( persona );
+
+// Nunca clonar objetos de esta manera; así sólo cambiamos la referencia a memoria del objeto 
+//const persona2 = persona;
+
+// El operador spread (...) es para clonar las propiedades de un objeto a otro objeto nuevo
+const personaDos = {...persona};
+personaDos.nombre = 'Peter';
+
+
+console.log( personaDos );
+
+
+
+
+
